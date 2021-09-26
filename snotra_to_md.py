@@ -81,7 +81,7 @@ def main():
             f.write(finding["pass_fail"])
             
             f.write("\n\n### Affected\n")
-            f.write(finding["affected"])
+            f.write(", ".join(finding["affected"]))
             
             f.write("\n\n### Description\n")
             f.write(finding["description"])
